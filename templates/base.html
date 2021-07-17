@@ -11,6 +11,7 @@
   <body  style="background-image: linear-gradient(to right,#FE4365,#FC9D9A,#F9CDAD ,#C8C8A9,#83AF9B); ">
     <!-- navigation bar -->
               <nav class="navbar navbar-expand-lg  navbar-light bg-light fixed-top scrolling-navbar">
+                
                 <div class="container" >
                       <a class="navbar-brand" href="{% url 'index' %}" style="color:#ffd622;" >Home</a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -20,33 +21,33 @@
                       <div class="collapse navbar-collapse" id="basicExampleNav" >
                         <ul class=" navbar-nav  mr-auto smooth-scroll " >
                                 <li class="nav-item">
-                                   <a class="nav-link" href="{% url 'curriculum:standard_list' %}">Curriculum</a>
+                                   <a class="nav-link" href="{% url 'curriculum:standard_list' %}" style="color:#ffd622;">Curriculum</a>
                                 </li>
                                 {% if user.is_superuser %}
                                 <li class="nav-item ">
-                                   <a class="nav-link" href="{% url 'admin:index' %}">Admin</span> </a>
+                                   <a class="nav-link" href="{% url 'admin:index' %}" style="color:#ffd622;">Admin</span> </a>
                                 </li>
                                 {%endif%}
                                 {% if user.is_authenticated %}
                                     <li class="nav-item  ">
-                                     <a class="nav-link" href="{% url 'user_logout' %}">Logout</a>
+                                     <a class="nav-link" href="{% url 'user_logout' %}" style="color:#ffd622;">Logout</a>
                                     </li>
                                 {% else %}
                                     <li class="nav-item ">
-                                        <a class="nav-link" href="{% url 'user_login' %}">Login</a>
+                                        <a class="nav-link" href="{% url 'user_login' %}" style="color:#ffd622;">Login</a>
                                     </li>
                                     <li class="nav-item " >
-                                       <a class="nav-link" href="{% url 'register' %}">Register</span> </a>
+                                       <a class="nav-link" href="{% url 'register' %}" style="color:#ffd622;">Register</span> </a>
                                     </li>
                                 {% endif %}
                                 <li class="nav-item">
-                                   <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                                   <a class="nav-link" href="{% url 'contact' %}" style="color:#ffd622;">Contact Us</a>
                                 </li>
                                 <li class="nav-item">
-                                   <a class="nav-link" href="#">GitHub</a>
+                                   <a class="nav-link" href="#" style="color:#ffd622;">GitHub</a>
                                 </li>
                                 <li class="nav-item">
-                                   <a class="nav-link" href="#">Youtube</a>
+                                   <a class="nav-link" href="#" style="color:#ffd622;">Youtube</a>
                                 </li>
 
                         </ul>
@@ -82,7 +83,7 @@
                   </div>
         </div>
         <div class="footer-copyright text-center py-3">
-            <p>© 2020 Copyright: Learningbotshub.com</p>
+            <p>© 2021 Copyright: With Us</p>
         </div>
       </div>
     </footer>
